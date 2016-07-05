@@ -1,0 +1,20 @@
+.centerplace{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.emojiNum{
+  height: 34px
+  width: 33px
+}
+
+.res{
+  font-weight: bold;
+  font-style: italic;
+}
+
+.math {
+  height: 40px;
+  width: 40px;
+}

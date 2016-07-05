@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<!-- Style -->
+<!-- Bootstrap --> <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+<!-- EmojiOne --> <link rel="stylesheet" href="emojione-master/assets/css/emojione.min.css" media="screen" title="no title" charset="utf-8">
+<!-- Master CSS --> <link rel="stylesheet" href="css/master.css" media="screen" title="no title" charset="utf-8">
+    <meta charset="utf-8">
+    <title>Emoji Calculator</title>
+  </head>
+  <body onload="GenEmoji();">
+
+<div class="container">
+  <div class="jumbotron">
+    <h1 class="emojitext">Welcome to the Emoji Calulator!:nerd:</h1>
+    <p class="emojitext">Ever get tired of doing calculations in boring numbers? How about trying doing calculations in emoji! :wink:<a href="moreinfo.html"> More info.</a></p>
+  </div>
+</div>
+
+<div class="container">
+  <img src="" id="operator" style="height:40px;width:40px" />
+<div class="row centerplace" id="InsertEmoji">
+  <p id="EmojiTextBoxPara" class="emojitext"></p>
+</div>
+<span class="res col-md-offset-8" id="NumResult">Numerical Result:</span>
+<span class="res col-md-offset-8 emojitext" id="EmojiResult">Emoji Result:</span>
+
+</div>
+
+<br>
+
+<div class="container centerplace">
+  <div class="row">
+      <button class="btn btn-primary emojiNum emojitext" onclick="AppendNumber7();">:space_invader:</button>
+      <button class="btn btn-primary emojiNum emojitext" onclick="AppendNumber8();">:ghost:</button>
+      <button class="btn btn-primary emojiNum emojitext" onclick="AppendNumber9();">:snail:</button>
+      <button class="btn btn-primary" onclick="div();">÷</button>
+  </div>
+</div>
+
+<br>
+
+<div class="container centerplace">
+  <div class="row">
+      <button class="btn btn-primary emojiNum emojitext" onclick="AppendNumber4();">:revolving_hearts:</button>
+      <button class="btn btn-primary emojiNum emojitext" onclick="AppendNumber5();">:lollipop:</button>
+      <button class="btn btn-primary emojiNum emojitext" onclick="AppendNumber6();">:eggplant:</button>
+      <button class="btn btn-primary" onclick="multi();">x</button>
+  </div>
+</div>
+
+<br>
+
+<div class="container centerplace">
+  <div class="row">
+      <button class="btn btn-primary emojiNum emojitext" onclick="AppendNumber1();">:point_up:</button>
+      <button class="btn btn-primary emojiNum emojitext" onclick="AppendNumber2();">:two_hearts:</button>
+      <button class="btn btn-primary emojiNum emojitext" onclick="AppendNumber3();">:sunglasses:</button>
+      <button class="btn btn-primary" onclick="sub();">-</button>
+  </div>
+</div>
+
+<br>
+
+<div class="container centerplace">
+  <div class="row">
+      <button class="btn btn-primary" onclick="AppendNumberdot();">.</button>
+      <button class="btn btn-primary emojiNum emojitext" onclick="AppendNumber0();">:ok_woman:</button>
+      <button class="btn btn-primary" onclick="Equate();">=</button>
+      <button class="btn btn-primary" onclick="add();">+</button>
+      <button class="btn btn-primary" onclick="appendneg();">(-)</button>
+  </div>
+</div>
+
+<br>
+
+<div class="container">
+  <div class="row">
+    <button class="btn btn-warning col-md-offset-8" id="ButtonToggle" onclick="EmojiToggle();">Swith to numbers</button>
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<div class="navbar navbar-default navbar-fixed-bottom">
+
+				<div class="container">
+
+					<p class="emojitext navbar-text pull-left"> Site built by <a href="https:penguingovernor.github.io">PenguinGovernor :penguin::crown:</a>  </p>
+					<a href="https://github.com/PenguinGovernro/EmojiCalculator" class="navbar-btn btn-danger btn pull-right">Source Code</a>
+
+				</div>
+
+			</div>
+<!-- JavaScript -->
+<!-- jQuery --> <script src="scripts/jQuery.min.js"></script>
+<!-- Bootstarp  --> <script src="scripts/bootstrap.min.js"></script>
+<!-- EmojiToNumbers --> <script src="scripts/EmojiToNumbers.js"></script>
+<!-- EmojiOne --> <script src="emojione-master/lib/js/emojione.js"></script>
+<!-- GenEmoji --> <script src="scripts/GenEmoji.js"></script>
+<!-- ButtonToggle --> <script src="scripts/ButtonToggle.js"></script>
+<!-- CalculateEmoji --> <script src="scripts/Calculate.js" charset="utf-8"></script>
+  </body>
+</html>
