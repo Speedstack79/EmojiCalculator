@@ -171,4 +171,5 @@ function ResultToEmoji(){
   }
   document.getElementById('EmojiResult').innerHTML = "Emoji Result:"+EmojiResult;
   GenEmoji();
+  EmojiResult = new Array();
 }
