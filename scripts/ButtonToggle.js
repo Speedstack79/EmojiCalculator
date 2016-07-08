@@ -105,3 +105,17 @@ function emojiToNum(){
     i++;
   }
 }
+
+function clearall(){
+  if (EmojiState) {
+    document.getElementById('EmojiTextBoxPara').innerHTML = "";
+  }
+  else {
+    document.getElementById('EmojiTextBoxInput').value = "";
+  }
+  value = 0;
+  TotalNum = new Array();
+  document.getElementById('operator').src = "";
+  document.getElementById('EmojiResult').innerHTML = "Emoji Result:";
+  document.getElementById('NumResult').innerHTML = "Numerical Result:";
+}
