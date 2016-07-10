@@ -9,40 +9,40 @@ function CalcEmoji(){
     for(var i = 0; i < CalcNum.length; i++){
       switch (CalcNum[i]) {
         case "🐌":
-          value = value+"9";
+          value += "9";
           break;
           case "👻":
-            value = value+"8";
+            value += "8";
             break;
             case "👾":
-              value = value+"7";
+              value += "7";
               break;
               case "🍆":
-                value = value+"6";
+                value += "6";
                 break;
                 case "🍭":
-                  value = value+"5";
+                  value += "5";
                   break;
                   case "💞":
-                    value = value+"4";
+                    value += "4";
                     break;
                     case "😎":
-                      value = value+"3";
+                      value += "3";
                       break;
                       case "💕":
-                        value = value+"2";
+                        value += "2";
                         break;
                         case "☝":
-                          value = value+"1";
+                          value += "1";
                           break;
                           case "🙆":
-                            value = value+"0";
+                            value += "0";
                             break;
                             case ".":
-                              value = value+".";
+                              value += ".";
                               break;
                               case "-":
-                                value = "-"+value;
+                                value +=  "-";
                                 break;
       }
     }
@@ -54,7 +54,7 @@ function CalcEmoji(){
       document.getElementById('EmojiTextBoxInput').value = "";
     }
     else {
-          value = value + Number(document.getElementById('EmojiTextBoxInput').value);
+          value +=  Number(document.getElementById('EmojiTextBoxInput').value);
     }
   }
 }
